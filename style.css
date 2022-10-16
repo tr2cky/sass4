@@ -1,0 +1,47 @@
+.exercise {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 0.0625rem solid red;
+}
+.exercise h1, .exercise h2 {
+  color: green;
+  grid-column: 1/span 4;
+  justify-self: center;
+  text-decoration: underline blue 0.125rem;
+}
+.exercise h2 {
+  padding: 1rem;
+  border: 0.0625rem solid red;
+  text-decoration: none;
+}
+.exercise section {
+  grid-column: 1/5;
+  display: flex;
+  margin: 1rem;
+}
+
+section:nth-of-type(1) article:nth-of-type(odd) {
+  color: blue;
+  border: 0.0625rem solid;
+  border-color: green;
+  font-size: 1rem;
+}
+section:nth-of-type(1) article:nth-of-type(even) {
+  color: red;
+  border: 0.0625rem solid;
+  border-color: green;
+  font-size: 1rem;
+}
+
+section:nth-of-type(2) {
+  margin-top: 0rem;
+  place-self: center;
+}
+section:nth-of-type(2) article {
+  color: green;
+  border: 0.0625rem solid;
+  border-color: blue;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
